@@ -1,0 +1,50 @@
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+      
+      
+.nav-wrapper{
+    background-color:#FFFFFF;
+    color:black;
+}
+
+.page-footer{
+    background-color:#FFFFFF;
+    border-top:1px solid #CCCCCC;
+}
+
+.idiomas{
+    float:right;
+    margin-right: 6%;
+    margin-top:10px;
+}
+
+.idioma{
+    width:28px;
+    height:28px;
+}
+
+#logo{
+    width:160px;
+    height:60px;
+    margin-left:6%;
+}
+
+.container{
+    width:90%;
+}
+
+.categoria{
+    border:1px solid #CCCCCC;
+    height:200px;
+}
+
+#box-categoria{
+    margin-top:25px;
+}
