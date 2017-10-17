@@ -10,18 +10,18 @@
       
       
 .nav-wrapper{
-    background-color:#FFFFFF;
+    background-color:#000;
     color:black;
 }
 
 .page-footer{
-    background-color:#FFFFFF;
+    background-color:#000;
     border-top:1px solid #CCCCCC;
 }
 
 .idiomas{
     float:right;
-    margin-right: 6%;
+    margin-right: 8%;
     margin-top:10px;
 }
 
@@ -32,8 +32,9 @@
 
 #logo{
     width:160px;
-    height:60px;
-    margin-left:6%;
+    height:45px;
+    margin-left:20%;
+    margin-top:10px;
 }
 
 .container{
@@ -47,4 +48,14 @@
 
 #box-categoria{
     margin-top:25px;
+}
+
+.img-categoria{
+    background-size:cover;
+}
+
+.title-categoria{
+    background-color:rgba(255,255,255,0.8);
+    text-align:center;
+    font-family: arial;
 }

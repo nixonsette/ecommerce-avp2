@@ -1,17 +1,15 @@
- <div class="container">
-            <div class="row" id="box-categoria">
-                <div class="col m6">
-                    <h2>Qualquer Coisa</h2>
-                    Existem muitos tipos de computadores com diferentes formas e tamanhos e, cada um oferece características que se encaixam as suas necessidades. Os computadores de mesa ou desktops: Os computadores de mesa ou desktops são aqueles mais comuns nas casas e
-                    nos escritórios. Esse tipo de computador não facilita a portabilidade porque dependem da energia elétrica e é composto por muitas partes. Além disso, você pode atualizá-los adicionando mais peças ou periféricos, como uma WebCam, uma
-                    impressora, fones de ouvido, microfone, etc. Um dos benefícios dos Desktops é o seu baixo custo. Se compararmos o seu preço com o de um notebook com as mesmas características, as diferenças são claramente notadas</div>
-                <div class="col m6">
-                    <div class="row">
-                        <div class="col m6 categoria">1</div>
-                        <div class="col m6 categoria">2</div>
-                        <div class="col m6 categoria">3</div>
-                        <div class="col m6 categoria">4</div>
-                    </div>
-                </div>
+<div class="container" ng-init="init()">
+    <div class="row" id="box-categoria">
+        <div class="col m6">
+            <h2>Qualquer Coisa</h2>
+            Existem muitos tipos de computadores com diferentes formas e tamanhos e, cada um oferece características que se encaixam as suas necessidades. Os computadores de mesa ou desktops: Os computadores de mesa ou desktops são aqueles mais comuns nas casas e
+            nos escritórios. Esse tipo de computador não facilita a portabilidade porque dependem da energia elétrica e é composto por muitas partes. Além disso, você pode atualizá-los adicionando mais peças ou periféricos, como uma WebCam, uma impressora,
+            fones de ouvido, microfone, etc. Um dos benefícios dos Desktops é o seu baixo custo. Se compararmos o seu preço com o de um notebook com as mesmas características, as diferenças são claramente notadas</div>
+        <div class="col m6">
+            <div class="row">
+                <div ng-repeat="c in listaCategorias" style="background-image:url('{{c.imagem}}');" class="col m6 categoria img-categoria"><div class="title-categoria">{{c.nome}}</div></div>
             </div>
         </div>
+    </div>
+</div>
+ 

@@ -17,9 +17,10 @@ var app = angular.module('ecommerce', ['ngRoute'])
     $scope.listaCategorias = {};
     
     $scope.init = function(){
-        $http.get("/api/categoria/consultar.php?retornar_imagem=sim")
+        $http.get("api/categoria/consultar.php?retornar_imagem=sim")
             .then(function(data){
                $scope.listaCategorias = data.data; 
             });
     }
+    $scope.teste = "testeee"
 })
