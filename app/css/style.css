@@ -1,61 +1,99 @@
   body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
   }
 
   main {
-    flex: 1 0 auto;
+      flex: 1 0 auto;
   }
-      
-      
-.nav-wrapper{
-    background-color:#000;
-    color:black;
-}
 
-.page-footer{
-    background-color:#000;
-    border-top:1px solid #CCCCCC;
-}
+  .nav-wrapper {
+      background-color: #000;
+      color: black;
+  }
 
-.idiomas{
-    float:right;
-    margin-right: 8%;
-    margin-top:10px;
-}
+  .page-footer {
+      background-color: #000;
+      border-top: 1px solid #CCCCCC;
+  }
 
-.idioma{
-    width:28px;
-    height:28px;
-}
+  .idiomas {
+      float: right;
+      margin-right: 8%;
+      margin-top: 10px;
+  }
 
-#logo{
-    width:160px;
-    height:45px;
-    margin-left:20%;
-    margin-top:10px;
-}
+  .idioma {
+      width: 28px;
+      height: 28px;
+  }
+  
+  .idioma:hover{
+      animation-name:rotate;
+      animation-duration:1s;
+      animation-fill-mode: forwards;
+  }
+  
+  @keyframes rotate{
+    from{
+        
+    }
+    to{
+        -ms-transform: rotate(2deg);
+        -webkit-transform: rotate(2deg);
+    }
+  }
 
-.container{
-    width:90%;
-}
+  #logo {
+      width: 160px;
+      height: 45px;
+      margin-left: 20%;
+      margin-top: 10px;
+  }
 
-.categoria{
-    border:1px solid #CCCCCC;
-    height:200px;
-}
+  .container {
+      width: 90%;
+  }
 
-#box-categoria{
-    margin-top:25px;
-}
+  .categoria {
+      border: 1px solid #F2F2F2;
+      height: 200px;
+  }
 
-.img-categoria{
-    background-size:cover;
-}
+  .categoria:hover {
+      border: 1px solid #CCCCCC;
+      animation-name: img-zoom;
+      animation-duration: 2s;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+  }
 
-.title-categoria{
-    background-color:rgba(255,255,255,0.8);
-    text-align:center;
-    font-family: arial;
-}
+  @keyframes img-zoom {
+      from {
+          background-size: 100%;
+      }
+      to {
+          background-size: 125%;
+      }
+  }
+
+  #box-categoria {
+      margin-top: 25px;
+  }
+
+  .img-categoria {
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+
+  .title-categoria {
+      background-color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      font-family: arial;
+      border-radius: 0px 0px 5px 5px;
+      border: 1px solid #F2F2F2;
+      border-top: 0px;
+  }
+  
